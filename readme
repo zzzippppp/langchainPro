@@ -8,4 +8,6 @@ Day01:
     3.消息对象 SystemMessage HumanMessage
 4.invoke返回值解析
 5.多种调用方式 流式stream 批量batch 异步a...
-6.这是一个合并测试2
+6.使用不同模型的其他参数
+7.langsmith监控，审计
+8.多轮对话优化实战，实现短期记忆功能
