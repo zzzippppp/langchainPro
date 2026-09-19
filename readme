@@ -1,0 +1,10 @@
+Langchain 学习
+Day01:
+1.chatOpenAI等多个调用AI大模型api方式
+2.env环境配置
+3.invoke参数
+    1.直接输入
+    2.message做多轮对话
+    3.消息对象 SystemMessage HumanMessage
+4.invoke返回值解析
+5.多种调用方式 流式stream 批量batch 异步a...
