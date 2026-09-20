@@ -1,5 +1,5 @@
-#Langchain 学习
-##Day01:
+# Langchain 学习
+## Day01:
 1.chatOpenAI等多个调用AI大模型api方式
 2.env环境配置
 3.invoke参数
@@ -12,7 +12,7 @@
 7.langsmith监控，审计
 8.多轮对话优化实战，实现短期记忆功能
 
-##Day02:
+## Day02:
 1.content/content_block 后者可以规范输入输出，完成多模态输入
 2.通过chatprompttemplate制作提示词模板，封装提示词
     两种实例化方法：直接，from_message
