@@ -15,9 +15,9 @@
 ## Day02:
 1. content/content_block 后者可以规范输入输出，完成多模态输入
 2. 通过chatprompttemplate制作提示词模板，封装提示词
-    两种实例化方法：直接，from_message
-    三种使用方式：invoke（ChatPromptValue），format(str),fromat_message(消息对象)
-    可以预填充提示词，以提高灵活性
+    1. 两种实例化方法：直接，from_message
+    2. 三种使用方式：invoke（ChatPromptValue），format(str),fromat_message(消息对象)
+    3. 可以预填充提示词，以提高灵活性
 3. @tool装饰器可以定义工具，注意要有"""对应的描述"""，定义完后要对工具进行挂载再使用
 4. convert_to_openai_tool可以展示工具详细信息
 5. parse_docstring=True设置，参数不在description中
