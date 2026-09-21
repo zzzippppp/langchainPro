@@ -23,4 +23,8 @@
 5. parse_docstring=True设置，参数不在description中
 6. 可用Pydantic（arg_schema）或者jsonschema进行传参，方便结构化输出
 7. 可通过choice选择需不需要调用工具，或者强制使用某个工具
-8. 报错解决方案：trycatch、agent级重试、重新调用外部工具
+8. 报错解决方案：try-catch、agent级重试、重新调用外部工具
+
+## Day03:
+1. pydantic规范化输出
+2. 
