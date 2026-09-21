@@ -7,8 +7,9 @@
           <value>
             <TabSessionState>
               <option name="provider" value="claude" />
+              <option name="sessionId" value="44dba28e-3d00-48c9-8d34-2e72f2e958e5" />
               <option name="cwd" value="D:\langchainPro" />
-              <option name="model" value="claude-sonnet-5" />
+              <option name="model" value="claude-sonnet-5[1m]" />
               <option name="permissionMode" value="bypassPermissions" />
             </TabSessionState>
           </value>
