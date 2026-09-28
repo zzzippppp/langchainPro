@@ -27,4 +27,15 @@
 
 ## Day03:
 1. pydantic规范化输出
-2. 
+
+## Day04
+1. Agent的创建与调用
+2. Tavily工具的使用
+
+## Day05
+1. Function calling，即HUMANMESSAGE -> AIMESSAGE -> TOOLMESSAGE -> AIMESSAGE 属于大模型的内容
+2. REACT 是FUNCTION calling的加强版，进行思考-行动-观察的循环，直到输出不在调用工具为止 属于Agent的内容
+3. 可以设置重试次数
+4. 为Agent设置名称，可以加强管理，加强审计，方便调用
+5. 可以为agent设置系统提示词
+6. Agent结构化输出 ToolStrategy ProviderStrategy源头厂商内置
