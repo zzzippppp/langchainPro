@@ -33,9 +33,21 @@
 2. Tavily工具的使用
 
 ## Day05
-1. Function calling，即HUMANMESSAGE -> AIMESSAGE -> TOOLMESSAGE -> AIMESSAGE 属于大模型的内容
-2. REACT 是FUNCTION calling的加强版，进行思考-行动-观察的循环，直到输出不在调用工具为止 属于Agent的内容
+1. Function calling，即HUMANMESSAGE -> AIMESSAGE -> TOOLMESSAGE -> AIMESSAGE 属于langchain的内容
+2. REACT 是FUNCTION calling的加强版，进行思考-行动-观察的循环，直到输出不再调用工具为止 属于langgraph的内容
 3. 可以设置重试次数
 4. 为Agent设置名称，可以加强管理，加强审计，方便调用
 5. 可以为agent设置系统提示词
 6. Agent结构化输出 ToolStrategy ProviderStrategy源头厂商内置
+7. 为Agent设置流式输出
+8. 中间件：即钩子函数，在生命周期中进行一些横向的操作，属于控制反转的体现
+9. langchain自带中间件大致分为六类：
+   1. 成本控制与资源控制类
+   2. 稳定性与容错保障类
+   3. 安全与合规风控类
+   4. 决策增强与智能编排类
+   5. 执行能力扩展类
+   6. 开发调试与测试辅助类
+10. 常用的几个中间件：
+   1. `SummarizationMiddleware中间件，对历史消息列表进行 摘要&总结 ，达到 压缩上下文 的效果。在 达到触发条件 时，调用大模型对历史消息进行摘要， 将摘要的结果作为HumanMessage，放到消息列表最开始的位置。
+   2. `
