@@ -51,5 +51,12 @@
 10. 常用的几个中间件：
     1. SummarizationMiddleware中间件，对历史消息列表进行 摘要&总结 ，达到 压缩上下文 的效果。在 达到触发条件 时，调用大模型对历史消息进行摘要， 将摘要的结果作为HumanMessage，放到消息列表最开始的位置。
     2. HumanInTheLoopMiddleware中间件，HumanInTheLoopMiddleware（人在环中间件、人工审核中间件）在 工具调用前 中断Agent运行，等待用户对工具调用请求决策。
-    3.  PIIMiddleware中间件，PII中间件用于检测和处理对话中的个人身份信息（Personally Identifiable Information，PII），支持自定义处理策略。
-    4.  TodoListMiddleware中间件，TodoListMiddleware中间件赋予了Agent 任务规划 和 追踪进度 的能力，可以 应对复杂的多步任务，TodoListMiddleware 中间件强制它把计划挂在全局状态里，时刻提醒它“下一步该干什么”。
+    3. PIIMiddleware中间件，PII中间件用于检测和处理对话中的个人身份信息（Personally Identifiable Information，PII），支持自定义处理策略。
+    4. TodoListMiddleware中间件，TodoListMiddleware中间件赋予了Agent 任务规划 和 追踪进度 的能力，可以 应对复杂的多步任务，TodoListMiddleware 中间件强制它把计划挂在全局状态里，时刻提醒它“下一步该干什么”。
+
+## Day06
+1. 短期记忆不跨会话（state），只在会话内发挥作用，一般为上下文，可用InMemorySaver()存储，也可以用postgresql长期保存
+2. 长期记忆可跨会话（store），一般保存用户偏好和用户画像类的内容
+
+## Day07
+1. RAG
